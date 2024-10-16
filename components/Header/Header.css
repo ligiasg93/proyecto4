@@ -1,0 +1,30 @@
+header {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header li {
+  text-align: center;
+}
+header nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  flex-wrap: wrap;
+}
+header  ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+header  li {
+  display: flex;
+    justify-content: space-around;
+}

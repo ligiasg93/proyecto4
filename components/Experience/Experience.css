@@ -1,0 +1,16 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 100px 0px;
+}
+
+.experience ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+  padding: 2rem;
+}

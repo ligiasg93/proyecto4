@@ -1,0 +1,51 @@
+:root {
+  --background: #8de7d5d0;
+  --heading: #090a0a;
+  --body: #227183ea;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: var(--background);
+  color: var(--body);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  letter-spacing: 4px;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--body);
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  height: calc(100vh - 180px - 80px);
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100%;
+}

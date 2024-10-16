@@ -1,0 +1,50 @@
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.aboutme > img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.aboutme > .rotate {
+  animation: rotate infinite 5s;
+}
+
+.aboutme > p {
+  max-width: 700px;
+  text-align: center;
+}
+
+.aboutme > ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutme li {
+  padding: 4px 8px;
+  background-color: var(--body);
+  border-radius: 1rem;
+  color: var(--background);
+}
+.aboutme a {
+  cursor: pointer;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
