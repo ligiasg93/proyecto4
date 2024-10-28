@@ -12,8 +12,8 @@
 }
 
 html, body {
-  height: 100%; /* Asegúrate de que html y body ocupen toda la altura */
-  overflow-y: auto; /* Permite scroll en el body */
+  height: 100%; 
+  overflow-y: auto; 
 }
 
 body {
@@ -48,17 +48,17 @@ ul {
 }
 
 header {
-  height: 180px; /* Altura fija para el header */
+  height: 180px; 
 }
 
 footer {
-  height: 80px; /* Altura fija para el footer */
+  height: 80px; 
 }
 
 main {
-  min-height: calc(100vh - 180px - 80px); /* Ajusta la altura para el scroll completo */
+  min-height: calc(100vh - 180px - 80px); 
   padding: 20px;
-  scroll-behavior: smooth; /* Efecto de desplazamiento suave */
+  scroll-behavior: smooth;
 }
 
 section {
@@ -74,7 +74,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center; /* Centra los elementos en columna */
+    align-items: center; 
   }
 }
 
@@ -86,7 +86,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center; /* Centra los elementos en columna */
+    align-items: center; 
   }
 }
 
