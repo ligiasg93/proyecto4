@@ -9,14 +9,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+}
+
+html, body {
+  height: 100%; /* Asegúrate de que html y body ocupen toda la altura */
+  overflow-y: auto; /* Permite scroll en el body */
 }
 
 body {
   background-color: var(--background);
   color: var(--body);
+  font-family: var(--font-family);
 }
 
+/* Estilos generales */
 a,
 h1,
 h2,
@@ -41,11 +47,52 @@ ul {
   list-style-type: none;
 }
 
+header {
+  height: 180px; /* Altura fija para el header */
+}
+
+footer {
+  height: 80px; /* Altura fija para el footer */
+}
+
 main {
-  height: calc(100vh - 180px - 80px);
-  scroll-behavior: smooth;
+  min-height: calc(100vh - 180px - 80px); /* Ajusta la altura para el scroll completo */
+  padding: 20px;
+  scroll-behavior: smooth; /* Efecto de desplazamiento suave */
 }
 
 section {
-  min-height: 100%;
+  padding: 0;
 }
+
+/* Media Queries */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Centra los elementos en columna */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Centra los elementos en columna */
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
+
